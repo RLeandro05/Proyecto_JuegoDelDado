@@ -58,7 +58,11 @@
             break;
     }
     
-    unset($listaDados[$dadoaEliminar]); // Eliminar el dado específico en la lista de dados anterior
+    foreach ($listaDados as $indice => $valor) {
+        if ($valor == $dadoaEliminar) {
+            unset($listaDados[$indice]);
+        }
+    }
 
      echo nl2br("<h2>Dados restantes</h2>\n");
      foreach ($listaDados as $dado) {
