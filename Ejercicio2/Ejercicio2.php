@@ -62,4 +62,5 @@ if ($numJugador1 > $numJugador2) { // Según los resultados del dado, mostrar el
 }
 
 
+
 ?>
